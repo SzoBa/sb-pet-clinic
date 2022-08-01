@@ -40,7 +40,7 @@
     </build>
     <scm>
         <developerConnection>
-            scm:git:github@github.com:SzoBa/sb-pet-clinic.git
+            scm:git:ssh://github@github.com:SzoBa/sb-pet-clinic.git
         </developerConnection>
         <tag>sb-pet-clinic-0.0.1</tag>
     </scm>
