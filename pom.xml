@@ -39,5 +39,10 @@
             </plugin>
         </plugins>
     </build>
-
+    <scm>
+        <developerConnection>
+            scm:git:github@github.com:SzoBa/sb-pet-clinic.git
+        </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
