@@ -1,4 +1,4 @@
-package com.springpractice.model;
+package com.springpractice.sbpetclinic.model;
 
 
 public class Person {
