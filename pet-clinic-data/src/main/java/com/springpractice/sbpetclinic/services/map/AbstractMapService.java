@@ -9,7 +9,7 @@ public abstract class AbstractMapService<T, ID> {
 
     protected Map<ID, T> map = new HashMap<>();
 
-    Set<T> findall() {
+    Set<T> findAll() {
         return new HashSet<>(map.values());
     }
 
