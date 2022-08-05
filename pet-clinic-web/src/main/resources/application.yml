@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active:
+      - prod
+---
+spring:
+  profiles:
+  - prod
+  - uat
+  - dev
+prod:
+  username: YmlProdUserName
+  password: YmlProdPassword
+  jdbcurl: YmlProdUrl
