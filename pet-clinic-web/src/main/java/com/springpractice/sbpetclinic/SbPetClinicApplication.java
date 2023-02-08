@@ -6,6 +6,7 @@ import com.springpractice.sbpetclinic.configuration.WebConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.i18n.LocaleContextHolder;
 
 @SpringBootApplication
 public class SbPetClinicApplication {
@@ -25,6 +26,7 @@ public class SbPetClinicApplication {
 		System.out.println(dataConfig.getH2DataSourceConfig().getUsername());
 		System.out.println(dataConfig.getH2DataSourceConfig().getPassword());
 		System.out.println(dataConfig.getH2DataSourceConfig().getJdbcurl());
+		System.out.println(LocaleContextHolder.getLocale());
 	}
 
 }
