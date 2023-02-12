@@ -17,7 +17,7 @@ public class VetController {
     private VetService vetService;
 
 
-    @RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
+    @RequestMapping({"/vets", "/vets/index", "/vets/index.html", "/vets.html"})
     public String listVets(Model model) {
 
         model.addAttribute("vets", vetService.findAll().stream().sorted(Comparator.comparing(BaseEntity::getId)).collect(Collectors.toList()));
