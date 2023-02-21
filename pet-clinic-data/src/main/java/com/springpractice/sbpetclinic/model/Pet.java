@@ -1,12 +1,18 @@
 package com.springpractice.sbpetclinic.model;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Data
 @Entity
+@SuperBuilder
 @Table(name = "pets")
+@EqualsAndHashCode(callSuper = true)
 public class Pet extends BaseEntity {
 
     @Column(name = "name")
@@ -16,6 +22,7 @@ public class Pet extends BaseEntity {
     @JoinColumn(name = "type_id")
     private PetType petType;
 
+    @EqualsAndHashCode.Exclude
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private Owner owner;
@@ -23,46 +30,8 @@ public class Pet extends BaseEntity {
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
+    @Builder.Default
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
     private Set<Visit> visits = new HashSet<>();
 
-    public Set<Visit> getVisits() {
-        return visits;
-    }
-
-    public void setVisits(Set<Visit> visits) {
-        this.visits = visits;
-    }
-
-    public PetType getPetType() {
-        return petType;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPetType(PetType petType) {
-        this.petType = petType;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
 }

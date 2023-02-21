@@ -1,8 +1,8 @@
 package com.springpractice.sbpetclinic.controllers;
 
-import com.springpractice.sbpetclinic.model.Owner;
 import com.springpractice.sbpetclinic.model.Person;
 import com.springpractice.sbpetclinic.services.OwnerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 
+@Slf4j
 @RequestMapping("/owners")
 @Controller
 public class OwnerController {
