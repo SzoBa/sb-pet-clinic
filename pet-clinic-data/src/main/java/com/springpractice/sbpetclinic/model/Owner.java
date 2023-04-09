@@ -10,6 +10,7 @@ import java.util.Set;
 @Setter
 @Entity
 @SuperBuilder
+@NoArgsConstructor
 @Table(name = "owners")
 @EqualsAndHashCode(callSuper = true)
 public class Owner extends Person {

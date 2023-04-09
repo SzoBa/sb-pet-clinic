@@ -10,6 +10,7 @@ import java.util.Set;
 @Data
 @Entity
 @SuperBuilder
+@NoArgsConstructor
 @Table(name = "pets")
 @EqualsAndHashCode(callSuper = true)
 public class Pet extends BaseEntity {

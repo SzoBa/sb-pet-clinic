@@ -8,6 +8,7 @@ import java.time.LocalDate;
 @Data
 @Entity
 @SuperBuilder
+@NoArgsConstructor
 @Table(name = "visits")
 @EqualsAndHashCode(callSuper = true)
 public class Visit extends BaseEntity {

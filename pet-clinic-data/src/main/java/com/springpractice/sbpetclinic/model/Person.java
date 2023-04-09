@@ -2,15 +2,17 @@ package com.springpractice.sbpetclinic.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 
-@Setter
-@Getter
+@Data
 @SuperBuilder
+@NoArgsConstructor
 @MappedSuperclass
+@EqualsAndHashCode(callSuper = true)
 public class Person extends BaseEntity {
 
     @Column(name = "first_name")
@@ -20,3 +22,5 @@ public class Person extends BaseEntity {
     private String lastName;
 
 }
+
+

@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "types")
 @SuperBuilder
+@NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class PetType extends BaseEntity {
 
