@@ -1,10 +1,10 @@
 package com.springpractice.sbpetclinic.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
 
 
 @Setter

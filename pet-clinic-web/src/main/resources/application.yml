@@ -12,10 +12,12 @@ spring:
     defer-datasource-initialization: true
 ---
 spring:
-  profiles:
-  - prod
-  - uat
-  - dev
+  config:
+    activate:
+      on-profile:
+        - prod
+        - uat
+        - dev
 prod:
   username: YmlProdUserName
   password: YmlProdPassword

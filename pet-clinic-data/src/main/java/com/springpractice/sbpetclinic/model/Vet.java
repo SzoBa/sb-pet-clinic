@@ -1,9 +1,11 @@
 package com.springpractice.sbpetclinic.model;
 
-import lombok.*;
+import jakarta.persistence.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Singular;
 import lombok.experimental.SuperBuilder;
 
-import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
