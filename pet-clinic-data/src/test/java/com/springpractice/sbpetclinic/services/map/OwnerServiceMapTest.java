@@ -19,11 +19,6 @@ class OwnerServiceMapTest {
 
     @InjectMocks
     OwnerServiceMap ownerServiceMap;
-    @Mock
-    PetTypeService petTypeServiceMock;
-    @Mock
-    PetService petServiceMock;
-
     final Long ownerId1 = 1L;
     final Long ownerId2 = 2L;
     final String lastName = "Smith";
